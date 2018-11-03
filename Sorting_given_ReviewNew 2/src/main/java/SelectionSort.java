@@ -35,16 +35,16 @@ public class SelectionSort implements SortMethod {
 			//  INVARIANT (prior to test):
 			//  All vec[bottom+1..n-1] are >= vec[bottom]
 			//  && vec[0..bottom] are in ascending order
-			//  && bottom >= 0
+        	//  && bottom >= 0
             minIndx = bottom;
             for (i = bottom+1; i < n; i++) {
-            // INVARIANT (prior to test):
-            // vec[minIndx] <= all
-            // vec[0..i-1]
-            // && i >= bottom+1
-            if (vec[i].key < vec[minIndx].key) { 
-                minIndx = i; 
-            }
+	            // INVARIANT (prior to test):
+	            // vec[minIndx] <= all
+	            // vec[0..i-1]
+	            // && i >= bottom+1
+	            if (vec[i].key < vec[minIndx].key) { 
+	                minIndx = i; 
+	            }
             }
             temp = vec[bottom];
             vec[bottom] = vec[minIndx];
