@@ -28,7 +28,5 @@ public interface SortMethod {
 	 * 
 	 * @param vec an Item array to be sorted
 	 */
-	public static void sort(Item[] vec) {
-		// sort functions override this method
-	};
+	public abstract void sort(Item[] vec) throws NullPointerException;
 }
